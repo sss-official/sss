@@ -1,37 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "GRAD" 0;
+  font-variation-settings: "GRAD" 0;
 }
 #header {
   font-weight: 700;
   background: #2791F5;
   color: white;
+  width: 100%;
+  padding: 36px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+#header h1 {
+  font-size: 2.2rem;
+  margin: 0 0 8px 0;
+}
+#header h3 {
+  margin: 0;
+  font-weight: 400;
 }
 @keyframes fade-in {
   from {
-    opacity: 0%;
-    transform: translateX(-800px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    opacity: 100%;
-    transform: translateX(0px);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+#info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 #position {
-  position: absolute;
-  top: 50px;
-  left: 500px;
-  width: 500px;
-  height: 800px;
-  background-color: lightblue;
+  display: inline-block;
+  background-color: #e6f4ff;
   border-style: solid;
-  border-color: blue;
+  border-color: #2791F5;
   border-radius: 10px;
-  
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  padding: 16px 20px;
+  max-width: 900px;
+  color: #000;
+  line-height: 1.4;
+  animation: fade-in 600ms ease forwards;
+}
+#position h3 {
+  margin: 0 0 8px 0;
+}
+#position p,
+#position ul {
+  margin: 0 0 8px 0;
+  padding-left: 1.2em;
 }
